@@ -8,6 +8,8 @@ Authors@R: person("Dan", "Mirman", email = "dan@danmirman.org", role = c("aut",
 Author: Dan Mirman
 Maintainer: Dan Mirman <dan@danmirman.org>
 Description: Various helper functions and example data sets for PSY811 Multilevel Regression.
+URL: http://github.com/dmirman/psy811
+BugReports: http://github.com/dmirman/psy811/issues
 License: GPL-3
 LazyData: true
 Imports:
