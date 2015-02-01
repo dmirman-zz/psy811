@@ -2,8 +2,6 @@
 #' 
 #' Takes a data frame, name of predictor variable, and polynomial order. Creates polynomial-transformed predictor variables, adds them to the data frame and returns the result. Original data frame is unchanged, remember to assign the result.
 #' 
-#' This function was originally written by Matt Winn and adapted and revised with his help.
-#' 
 #' @param df data frame, should not contain any variables called "predictor"
 #' @param predictor string name of predictor variable
 #' @param poly.order integer order of polynomial to be created
@@ -14,8 +12,7 @@
 #' WordLearnEx.gca <- code.poly(df=WordLearnEx, predictor="Block", poly.order=2)
 #' Az.gca <- code.poly(df=Az, predictor="Time", poly.order=2, orthogonal=FALSE)
 #' @section Contributors:
-#' Originally written by Matt Winn \url{http://www.mattwinn.com/tools/R_add_polynomials_to_df.html}
-#' Revised by Dan Mirman to handle various corner cases
+#' Originally written by Matt Winn \url{http://www.mattwinn.com/tools/R_add_polynomials_to_df.html} and revised by Dan Mirman to handle various corner cases.
 code.poly <- function(df=NULL, predictor=NULL, poly.order=NULL, orthogonal=TRUE, draw.poly=TRUE){
   # Codes raw or orthogonal polynomial transformations of a predictor variable
   # be sure to not have an actual variable named "predictor" in your data.frame

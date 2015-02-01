@@ -3,9 +3,9 @@
 #' Display the Student's t distributions with various degrees of freedom and compare to the normal distribution
 #' @param degf vector of degrees of freedom for t distributions
 #' @examples
-#' t.df.demo()
-#' t.df.demo(degf=c(1, 5, 15, 50, 500))
-t.df.demo <- function(degf=c(1, 10, 100)){
+#' t_df_demo()
+#' t_df_demo(degf=c(1, 5, 15, 50, 500))
+t_df_demo <- function(degf=c(1, 10, 100)){
   #set up data frame with range of t-values and normal distribution
   dat <- data.frame(tvalue = seq(-4, 4, length=100))
   dat$Normal <- dnorm(dat$tvalue)

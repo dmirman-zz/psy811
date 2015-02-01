@@ -23,13 +23,9 @@ Returns a data frame containing the original data and at least two new columns: 
 \description{
 Takes a data frame, name of predictor variable, and polynomial order. Creates polynomial-transformed predictor variables, adds them to the data frame and returns the result. Original data frame is unchanged, remember to assign the result.
 }
-\details{
-This function was originally written by Matt Winn and adapted and revised with his help.
-}
 \section{Contributors}{
 
-Originally written by Matt Winn \url{http://www.mattwinn.com/tools/R_add_polynomials_to_df.html}
-Revised by Dan Mirman to handle various corner cases
+Originally written by Matt Winn \url{http://www.mattwinn.com/tools/R_add_polynomials_to_df.html} and revised by Dan Mirman to handle various corner cases.
 }
 \examples{
 WordLearnEx.gca <- code.poly(df=WordLearnEx, predictor="Block", poly.order=2)

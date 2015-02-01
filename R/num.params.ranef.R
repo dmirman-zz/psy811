@@ -19,5 +19,5 @@ num.params.ranef <- function(tim = 1:5, cond = 2:4){
   dat$Left <- with(dat, nTime*nCond + ((nTime*nCond)*(nTime*nCond-1))/2)
   dat$Right <- with(dat, nTime*nCond + (nTime*(nTime-1)))
   dat.m <- melt(dat, measure=c("Left", "Right"), variable.name="Type", value.name="Parameters")
-  ggplot(dat.m, aes(nTime, Parameters, color=Type, shape=factor(nCond))) + geom_line() + geom_point(size=3) + theme_bw(base_size=12) + labs(x="Number of time terms", y="Number of random effect parameters", shape="Number of\nConditions") + scale_color_manual(values=c("red", "blue")) + scale_x_continuous(breaks=tim) + legend.positioning(c(0,1))
+  ggplot(dat.m, aes(nTime, Parameters, color=Type, shape=factor(nCond))) + geom_line() + geom_point(size=3) + theme_bw(base_size=12) + labs(x="Number of time terms", y="Number of random effect parameters", shape="Number of\nConditions") + scale_color_manual(values=c("red", "blue")) + scale_x_continuous(breaks=tim) + legend_positioning(c(0,1))
 }
