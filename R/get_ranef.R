@@ -9,6 +9,7 @@
 #' @examples
 #' re <- get_ranef(m.FT, "Subject:Object:Condition") #using FunctTheme example model
 get_ranef <- function(model=NULL, ranef_name=NULL){
+  require(plyr)
   if(is.null(model) | is.null(ranef_name)){
     stop("Both model and ranef_name need to be specified.")
   }

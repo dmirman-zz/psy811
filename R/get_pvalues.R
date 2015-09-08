@@ -37,6 +37,7 @@ get_pvalues <- function(model, method = "normal") {
 
   # Apply KR if asked for
   if (method %in% c("KR", "all")) {
+    require(pbkrtest)
     #run a minimal KRmodcomp
     restrictionMatrix <- cbind(t(rep(0, length(fixef(model))-1)), 1)
     kr <- KRmodcomp(model, restrictionMatrix)
