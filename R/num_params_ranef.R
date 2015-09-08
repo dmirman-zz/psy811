@@ -12,8 +12,8 @@
 #' @param tim vector of number of (polynomial) time terms
 #' @param cond vector of number of conditions
 #' @examples
-#' num.params.ranef()
-num.params.ranef <- function(tim = 1:5, cond = 2:4){
+#' num_params_ranef()
+num_params_ranef <- function(tim = 1:5, cond = 2:4){
   dat <- data.frame(nTime = rep(tim, each=length(cond)), 
                     nCond = rep(cond, length(tim)))
   dat$Left <- with(dat, nTime*nCond + ((nTime*nCond)*(nTime*nCond-1))/2)
