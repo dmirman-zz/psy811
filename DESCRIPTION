@@ -2,7 +2,7 @@ Package: psy811
 Type: Package
 Title: Tools for PSY811 Multilevel Regression
 Version: 1.0
-Date: 2015-01-28
+Date: 2015-09-08
 Authors@R: person("Dan", "Mirman", email = "dan@danmirman.org", role = c("aut",
     "cre"))
 Author: Dan Mirman
