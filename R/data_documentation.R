@@ -43,6 +43,21 @@
 #'  @source Mirman et al. (2011, Brain & Lang., 117:2, 53-68) \url{http://www.danmirman.org/pdfs/Mirman_etal_2011.pdf}
 "CohortRhyme"
 
+#' Tolerance of deviant behavior
+#' 
+#' Subset of National Youth Survey longitudinal data on tolerance for deviant behavior, exposure to deviant behavior, and gender. Deviant behavior was measured by a "9-item instrument that asked whether it was wrong for someone their age to do one of the following: cheat on tests, purposely destroy property of others, use marijuana, steal something worth less than $5, hit or threaten someone without reason, use alcohol, break into a building or vehicle to steal, sell hard drugs, or steal something worth more than $50 (Raudenbush & Chan, 1992)." (Willett, 1997, p. 219-220).
+#' 
+#' @format A data frame with 80 rows and 5 variables
+#' \describe{
+#'  \item{SubjID}{participant ID, N=16}
+#'  \item{Gender}{participant gender}
+#'  \item{Exposure}{exposure to deviant behavior during adolescence (assumed time-invariant)}
+#'  \item{Age}{age at reported tolerance}
+#'  \item{Tolerance}{tolerance of deviant behavior, measured on 4-point scale (1 = very wrong, 2 = wrong, 3 = a little bit wrong, 4 = not wrong at all), averaged across items}
+#'  }
+#'  @source Table 11.1 (p. 220) in Willett (1997, "Measuring change: What individual growth modeling buys you." In Amsel, E. and Renninger, K. A. (Eds) Change and development: Issues of theory, method, and application, The Jean Piaget symposium series). \url{http://gseacademic.harvard.edu/~willetjo/change.htm}
+"DeviantBehavior"
+
 #' School mental health services and educational achievement
 #' 
 #' Invented longitudinal data for test of effect of school mental health services on educational achievement.
